@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+:root {
+  --solar-yellow: #FFC945;
+  --solar-orange: #FF6F3C;
+  --solar-light: #FFF9E3;
+  --neon-blue: #3DE8FF;
+  --background-light: #FAF9F6;
+  --text-dark: #222;
+  --border-glow: 0 0 8px var(--solar-yellow);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: var(--background-light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--solar-yellow);
+  padding: 1rem 2rem;
+  box-shadow: 0 0 15px var(--solar-orange);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #111;
+  text-shadow: 0 0 10px var(--solar-orange);
+}
+
+nav a {
+  color: #111;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  font-weight: 700;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  background: var(--neon-blue);
+  color: var(--background-light);
+  box-shadow: 0 0 12px var(--neon-blue);
+}
+
+main {
+  flex-grow: 1;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  color: var(--solar-orange);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 0 6px var(--solar-orange);
+  border-bottom: 2px solid var(--solar-orange);
+  padding-bottom: 0.3rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--solar-orange);
+  color: var(--background-light);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 0 10px var(--solar-orange);
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.btn:hover {
+  background: var(--neon-blue);
+  box-shadow: 0 0 15px var(--neon-blue);
+  color: var(--background-light);
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 280px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 10px var(--solar-yellow);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  background: var(--solar-yellow);
+  color: #111;
+  font-weight: 700;
+  box-shadow: 0 0 15px var(--solar-orange);
+  user-select: none;
+}
