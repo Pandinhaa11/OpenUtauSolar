@@ -1,4 +1,4 @@
-
+#  Project Solar is currently paused. No ETA.
 # OpenUtau
 
 OpenUtau is a free, open-source editor made for the UTAU community.
